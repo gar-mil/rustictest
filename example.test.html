@@ -1,0 +1,30 @@
+<script type="module">
+    import * as RusticTest from "/rustictest.min.js";
+    
+    var tests = new RusticTest.RusticTest();
+    testMultiplication();
+    testTruthiness();
+    failedTest();
+    tests.testResults();
+    
+    function testMultiplication()
+    {
+        // Assert that the tested value matches the expected value.
+        var testValue = 6*2;
+        tests.assertStrictEquals('testMultiplication',12,testValue,'- 6*2');
+    }
+
+    function testTruthiness()
+    {
+        // Assert that the tested value is true.
+        var testValue = null;
+        tests.assert('testTruthiness',testValue === null,'nullValue === null')
+    }
+
+    function failedTest()
+    {
+        // 4*3 does NOT equal 13
+        var testValue = 4*3;
+        tests.assertStrictEquals('failedTest',13,testValue,'- 4*3 but testing for 13');
+    }
+</script>
