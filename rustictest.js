@@ -1,5 +1,6 @@
 /**
  * RusticTest.js
+ * v1.0.0
  * https://github.com/gar-mil/rustictest
  * 
  * A ridiculously lightweight, no dependencies, in-browser JavaScript testing suite.
@@ -30,7 +31,7 @@ export class RusticTest
     }
 
     /**
-     * Log a failure directly without directly performing a test.
+     * Log a failure directly without using a test method.
      * @param {string} testName Name of your test (i.e. 'multiplicationTest').
      * @param {string} testType Type of test (i.e. 'assertEquals').
      * @param {string} msg Informational message about what the test did (i.e. '7 != 6').
@@ -44,7 +45,7 @@ export class RusticTest
     }
 
     /**
-     * Log a success directly without directly performing a test.
+     * Log a success directly without using a test method.
      * @param {string} testName Name of your test (i.e. 'multiplicationTest').
      * @param {string} testType Type of test (i.e. 'assertEquals').
      * @param {string} msg Informational message about what the test did (i.e. '7 != 6').
