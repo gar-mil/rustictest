@@ -9,7 +9,7 @@ Future updates will be sporadic, and I am not intending to develop this into a f
 
 ## Usage
 * Step 1.) Instantiate the RusticTest class (var tests = new RusticTest()).
-* Step 2.) Run your tests (tests.assertEquals('1+1=2',2,'1+1')).
+* Step 2.) Run your tests (tests.assertEquals('1+1=2',2,testValue,'Adds one and one together.')).
 * Step 3.) Display the results (tests.testResults()).
 
 ## Methods
