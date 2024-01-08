@@ -61,8 +61,8 @@ export class RusticTest
     /**
      * Test if the passed value is true.
      * @param {string} testName Name of your test (i.e. 'multiplicationTest').
-     * @param {any} value Value to be tested (i.e. false)
-     * @param {string} info Informational message about what the test did (i.e. 'Does element 7 exist?').
+     * @param {any} value Value to be tested for truthiness (i.e. false).
+     * @param {string} info Optional human-readable information to display in test logs (i.e. 'Does 4 * 3 = 12?').
      */
     assert(testName, value, info = '') 
     {
@@ -79,9 +79,9 @@ export class RusticTest
     /**
      * Test if passed value is equal to the expected value.
      * @param {string} testName Name of your test (i.e. 'multiplicationTest').
-     * @param {any} expected What the value should be if the test passes (i.e. 7).
+     * @param {any} expected What the value should be (i.e. 7).
      * @param {any} actual The value to be tested (i.e. 8).
-     * @param {string} info Optional information to display in test logs.
+     * @param {string} info Optional human-readable information to display in test logs (i.e. 'Does 4 * 3 = 12?').
      */
     assertEquals(testName, expected, actual, info = '') 
     {
@@ -98,9 +98,9 @@ export class RusticTest
     /**
      * Test if passed value is equal to and of the same type as the expected value.
      * @param {string} testName Name of your test (i.e. 'multiplicationTest').
-     * @param {any} expected What the value should be if the test passes (i.e. 7).
+     * @param {any} expected What the value should be (i.e. 7).
      * @param {any} actual The value to be tested (i.e. 8).
-     * @param {string} info Optional information to display in test logs.
+     * @param {string} info Optional human-readable information to display in test logs (i.e. 'Does 4 * 3 = 12?').
      */
     assertStrictEquals(testName, expected, actual, info = '') 
     {
