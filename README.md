@@ -1,5 +1,11 @@
 # rustictest
-A ridiculously lightweight, dependency-free, in-browser JavaScript testing suite.
+A ridiculously lightweight, dependency-free, in-browser JavaScript testing "suite."
+
+I am a firm believer in unit testing and love robust testing suites like Jest, but sometimes I just don't need that much power and overhead. Rustictest is anything but robust; it features only three types of tests, has no CI/CD integration, and doesn't attempt to do anything fancy. It clocks in at 2KB minified, does not need npm or yarn, and runs tests as quickly as you can reload your browser window. I use it for rapid prototyping and for vanillajs projects, and sometimes run it side-by-side with Jest.
+
+Test results can be displayed as a simple dashboard, or silently in the console log.
+
+Future updates will be sporadic, and I am not intending to develop this into a full-fledged testing suite.
 
 ## Usage
 * Step 1.) Instantiate the RusticTest class (var tests = new RusticTest()).

@@ -3,7 +3,7 @@
  * v1.0.0
  * https://github.com/gar-mil/rustictest
  * 
- * A ridiculously lightweight, dependency-free, in-browser JavaScript testing suite.
+ * A ridiculously lightweight, dependency-free, in-browser JavaScript testing "suite."
  * 
  * Usage:
  * Step 1.) Instantiate the RusticTest class (var tests = new RusticTest()).
